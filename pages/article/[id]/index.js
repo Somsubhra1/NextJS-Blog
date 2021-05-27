@@ -35,6 +35,7 @@ const article = ({ article }) => {
 //   };
 // };
 
+// getStaticProps and getStaticPaths fetches/generate the data during build time
 export const getStaticProps = async (context) => {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${context.params.id}`
