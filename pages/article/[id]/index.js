@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { server } from "../../../config/";
+import Meta from "../../../components/Meta";
 
 const article = ({ article }) => {
   // Get route data by following the way below
@@ -11,6 +12,7 @@ const article = ({ article }) => {
   //   const { id } = router.query;
   return (
     <>
+      <Meta title={article.title} description={article.excerpt} />
       <h1>{article.title}</h1>
       <p>{article.body}</p>
 

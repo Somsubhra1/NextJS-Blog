@@ -1,13 +1,16 @@
 // Auto generates routes for pages
 
-import Head from "next/head";
+import Meta from "../components/Meta";
+
+// import Head from "next/head";
 
 const about = () => {
   return (
     <div>
-      <Head>
+      <Meta title="About" />
+      {/*<Head>
         <title>About</title>
-      </Head>
+      </Head>*/}
       <h1>About</h1>
     </div>
   );

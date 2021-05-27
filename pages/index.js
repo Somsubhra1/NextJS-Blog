@@ -1,16 +1,15 @@
-import Head from "next/head";
+// import Head from "next/head";
 import ArticleList from "../components/ArticleList";
 import { server } from "../config/";
 
 export default function Home({ articles }) {
-  console.log(articles);
   return (
     <div>
       {/* Head inbuilt component helps to add meta data and head section to our pages */}
-      <Head>
+      {/*<Head>
         <title>Web Dev Newz</title>
         <meta name="keywords" content="web development, programming" />
-      </Head>
+      </Head>*/}
 
       <ArticleList articles={articles} />
     </div>
