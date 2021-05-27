@@ -34,7 +34,7 @@ export default function Home({ articles }) {
 // };
 
 export const getStaticProps = async () => {
-  const res = await fetch(`/api/articles`, {
+  const res = await fetch(`${server}/api/articles`, {
     method: "GET",
     headers: {
       // update with your user-agent
