@@ -1,5 +1,6 @@
 import styles from "../styles/Layout.module.css";
 import Nav from "./Nav";
+import Header from "./Header";
 
 // Layouts are used to wrap around pages
 
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
       <Nav />
       <div className={styles.container}>
         <main className={styles.main}>
-          <h2>Hello</h2>
+          <Header />
           {children}
         </main>
       </div>
