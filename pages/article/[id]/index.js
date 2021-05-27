@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 const article = ({ article }) => {
-  console.log(article);
   // Get route data by following the way below
   //   const router = useRouter();
 
